@@ -72,6 +72,7 @@ namespace BookManagementSystem.Controllers
             {
                 return Ok("Hata ! Kitap Güncellenemedi. Tekrar deneyiniz.");
             }
+            _context.SaveChanges();
             return Ok("Güncelleme İşlemi Başarıyla Gerçekleştirildi.");
         }
 
